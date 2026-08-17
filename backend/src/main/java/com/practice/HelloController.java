@@ -12,7 +12,17 @@ public class HelloController {
 
     @GetMapping("/hello")
     public String hello() {
-        return "Hello from backend v2 — greeting updated";
+        return "Hello from backend v2 — greeting updated after creating cleanup";
+    }
+
+    @GetMapping("/status")
+    public String status() {
+        return "OK";
+    }
+
+    @GetMapping("/orders")
+    public String orders() {
+        return "OK";
     }
 
     @GetMapping("/status")
