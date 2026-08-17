@@ -14,4 +14,9 @@ public class HelloController {
     public String hello() {
         return "Hello from backend v2 — greeting updated";
     }
+
+    @GetMapping("/status")
+    public String status() {
+        return "OK";
+    }
 }
