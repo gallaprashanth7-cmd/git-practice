@@ -12,7 +12,6 @@ public class HelloController {
 
     @GetMapping("/hello")
     public String hello() {
-        return "Hello from backend, main branch fix";
         return "Hello from backend v2 — greeting updated";
     }
 }
